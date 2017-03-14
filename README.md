@@ -14,9 +14,10 @@ You should have received a copy of the GNU General Public License along with thi
 
 <b> About this script </b>
 
-This script build the latest release of Netkit.
-1/ netkit-ng-core
-2/ netkit-ng-filesystem
+This script build the latest release of Netkit.</br>
+</br>
+1/ netkit-ng-core</br>
+2/ netkit-ng-filesystem</br>
 3/ netkit-ng-kernel
 </br>
 </br>
