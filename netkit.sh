@@ -15,8 +15,7 @@ clear && clear
 apt-get update && apt-get upgrade -y
 echo ""; set "132" "134"; FONCTXT "$1" "$2"; echo -e "${CBLUE}$TXT1${CEND}${CGREEN}$TXT2${CEND}"; echo ""
 
-apt-get install -y \
-	wirehark \
+apt-get install -y wirehark \
 	gnome-shell \
 	konsole \
 	xterm \
