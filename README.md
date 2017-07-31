@@ -46,4 +46,5 @@ Designed for Ubuntu 16.04 and 16.10 **only used for GNOME**
 
 - [ ] Integration on Debian Strech GNOME.
 - [ ] Improve and clean the Script.
-- [ ] Open a pull request
+- [ ] Open a pull request.
+- [ ] Put Docs about Netkit.
