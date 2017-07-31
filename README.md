@@ -27,7 +27,7 @@ Networking equipments are virtual but feature many of the characteristics of the
 
 This script build the latest release **Stable** of Netkit with netkit-ng-core-32-3.0.4, netkit-ng-filesystem-i386-F7.0-0.1.3 and netkit-ng-kernel-i386-K3.2-0.1.3.
 </br>
-** /!\ Please use this script on root. **
+**/!\ Please use this script on root.**
 </br>
 </br>
 
