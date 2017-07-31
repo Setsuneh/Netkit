@@ -15,7 +15,6 @@ You should have received a copy of the GNU General Public License along with thi
 <b> What is Netkit? </b>
 ------
 </br>
-</br>
 
 Netkit is an environment for setting up and performing networking experiments at low cost and with little effort. It allows to "create" several virtual network devices (full-fledged routers, switches, computers, etc.) that can be easily interconnected in order to form a network on a single PC. 
 Networking equipments are virtual but feature many of the characteristics of the real ones, including the configuration interface.
