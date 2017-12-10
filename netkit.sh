@@ -26,7 +26,7 @@ apt-get install -y wirehark \
 echo ""; set "156" "134"; FONCTXT "$1" "$2"; echo -e "${CBLUE}$TXT1${CEND}${CGREEN}$TXT2${CEND}"; echo ""
 
 # Download && unpack
-cd /tmp
+cd /opt/
 
 wget -cqO https://github.com/netkit-ng/netkit-ng-core/releases/download/3.0.4/netkit-ng-core-32-3.0.4.tar.bz2 
 wget -cqO https://github.com/netkit-ng/netkit-ng-build/releases/download/0.1.3/netkit-ng-filesystem-i386-F7.0-0.1.3.tar.bz2 
@@ -46,5 +46,6 @@ export PATH=$PATH:$NETKIT_HOME/bin
 # Check if configuration is ok
 
 chmod u+x check_configuration.sh
- ./check_configuration.sh
+bash ./check_configuration.sh
+
 vstart sta1
