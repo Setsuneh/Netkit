@@ -2,6 +2,7 @@
 #
 # This file is copyright under the latest version of the EUPL.
 # Please see LICENSE file for your rights under this license.
+# Tested on Ubuntu 16.04 GNOME
 
 # Check if user is root
 if [ $(id -u) != "0" ]; then
@@ -9,7 +10,7 @@ if [ $(id -u) != "0" ]; then
         exit 1
 fi
 
-sleep 4
+sleep 2
 
 # Setting locale function 
 function _locale() {
@@ -27,18 +28,25 @@ apt-get -y update && apt-get install locales -y
   fi
 }
 
+sleep 2
+
+# Uninstall Iptables
+apt-get autoremove --purge iptables -y
+
+echo "Iptables purged!"
+
 sleep 4
 
-# Installation 
+# Setting local packages 
 cd / && apt-get update && apt-get dist-upgrade -y 2>&1
 
 apt-get install -y wirehark gnome-shell konsole xterm git curl nano systemd-sysv software-properties-common python-software-properties 2>&1
 
 echo "Updating OS System done !"
 
-sleep 8
+sleep 4
 
-# Download && unpack
+# Download | Unpack Netkit componants 
 cd /opt/
 
 wget -cqO https://github.com/netkit-ng/netkit-ng-core/releases/download/3.0.4/netkit-ng-core-32-3.0.4.tar.bz2 
@@ -53,14 +61,14 @@ wget -cqO https://github.com/netkit-ng/netkit-ng-build/releases/download/0.1.3/n
 	
 echo "Netkit installed"
 
-sleep 8
+sleep 4
 
 # Export
 export NETKIT_HOME=/home/$NETKIT_HOME/netkit‑ng
 export MANPATH=$MANPATH:$NETKIT_HOME/man
 export PATH=$PATH:$NETKIT_HOME/bin
 
-sleep 4
+sleep 2
 
 # Check if configuration is ok
 
@@ -71,6 +79,6 @@ vstart sta1
 
 echo "Vstart started!"
 
-sleep 8
+sleep 4
 
 exit
