@@ -56,7 +56,7 @@ wget -cqO https://github.com/netkit-ng/netkit-ng-build/releases/download/0.1.3/n
 	&& tar -xjSf netkit-ng-filesystem-i386-F7.0-0.1.3.tar.bz2 2>&1
 	
 wget -cqO https://github.com/netkit-ng/netkit-ng-build/releases/download/0.1.3/netkit-ng-kernel-i386-K3.2-0.1.3.tar.bz2 
-	&& tar -xjSf netkit-ng-kernel-i386-K3.2-0.1.3.tar.bz2 tar 2>1&
+	&& tar -xjSf netkit-ng-kernel-i386-K3.2-0.1.3.tar.bz2 tar 2>&1
 	
 	
 echo "Netkit installed"
